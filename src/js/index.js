@@ -95,32 +95,6 @@ style1.innerHTML = `@keyframes my {
 }`;
 document.head.append(style1);
 
-function toggleFaq(clicked) {
-  const item = clicked.closest(".faq-item");
-  const answer = item.querySelector(".faq-answer");
-  const svg = item.querySelector(".icon-svg");
-  const isOpen = item.classList.contains("open");
-
-  // Close all
-  document.querySelectorAll(".faq-item").forEach((el) => {
-    el.classList.remove("open", "bg-[#F4F4F4]", "rounded-2xl");
-    el.querySelector(".faq-answer").classList.remove(
-      "max-h-[500px]",
-      "opacity-100",
-      "py-2"
-    );
-    el.querySelector(".faq-answer").classList.add("max-h-0", "opacity-0");
-    el.querySelector(".icon-svg").classList.remove("rotate-45");
-  });
-
-  // Open clicked
-  if (!isOpen) {
-    item.classList.add("open", "bg-[#F4F4F4]", "rounded-2xl");
-    answer.classList.remove("max-h-0", "opacity-0");
-    answer.classList.add("max-h-[500px]", "opacity-100");
-    svg.classList.add("rotate-45");
-  }
-}
 // ===== السلايدر الكبير =====
 const bigSlider = new Swiper(".bigSlider", {
   loop: true,

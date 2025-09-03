@@ -1879,15 +1879,15 @@
           />
         </div>
       </section>
-
       <script>
         const faqs = document.querySelectorAll(".faq-btn");
 
         faqs.forEach((btn) => {
-          btn.addphoto1.jpgner("click", () => {
+          btn.addEventListener("click", () => {
             const content = btn.nextElementSibling;
             const icon = btn.querySelector(".faq-icon");
 
+            // اقفل كل الأسئلة المفتوحة غير اللي اتضغط
             document.querySelectorAll(".faq-content").forEach((c) => {
               if (c !== content) {
                 c.style.maxHeight = "0px";
@@ -1897,6 +1897,7 @@
               if (i !== icon) i.classList.remove("rotate-180");
             });
 
+            // فتح/قفل اللي اتضغط
             if (content.style.maxHeight && content.style.maxHeight !== "0px") {
               content.style.maxHeight = "0px";
               icon.classList.remove("rotate-180");
