@@ -187,11 +187,12 @@
       <!-- End Nav1 -->
 
       <!-- Start Nav2 -->
-      <div
-        class="flex container items-center justify-between flex-row h-[80px]"
-      >
-        <div class="flex items-center justify-between">
-          <nav class="flex items-center">
+      <header class="bg-white shadow relative z-50">
+        <div class="flex container items-center justify-between h-[80px]">
+          <!-- زرار المينيو -->
+
+          <!--  -->
+          <nav class="flex items-center" id="menu-btn">
             <div class="w-10 h-10 cursor-pointer ml-[22px]">
               <svg
                 width="40"
@@ -264,137 +265,323 @@
               </li>
             </ul>
           </nav>
+
+          <!-- اللوجو -->
+          <div class="md:w-[199px] md:h-[53px] w-[118px] h-[31px]">
+            <img
+              loading="lazy"
+              src="./images/Header/mainLogo.svg"
+              class="w-full"
+              alt="Logo"
+            />
+          </div>
+
+          <!-- الأيقونات -->
+          <div class="">
+            <ul class="flex items-center gap-[1rem]">
+              <li class="bg-[#CE94611F] hover:bg-primaryColor p-2 rounded-full">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.58332 17.5C13.9556 17.5 17.5 13.9556 17.5 9.58333C17.5 5.21108 13.9556 1.66666 9.58332 1.66666C5.21107 1.66666 1.66666 5.21108 1.66666 9.58333C1.66666 13.9556 5.21107 17.5 9.58332 17.5Z"
+                    stroke="#1E3231"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.3333 18.3333L16.6667 16.6667"
+                    stroke="#1E3231"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </li>
+              <li
+                class="bg-[#CE94611F] hidden lg:flex hover:bg-primaryColor p-2 rounded-full"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.0003 9.99991C12.3015 9.99991 14.167 8.13443 14.167 5.83325C14.167 3.53206 12.3015 1.66658 10.0003 1.66658C7.69913 1.66658 5.83365 3.53206 5.83365 5.83325C5.83365 8.13443 7.69913 9.99991 10.0003 9.99991Z"
+                    stroke="#1E3231"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.1587 18.3333C17.1587 15.1083 13.9504 12.5 10.0004 12.5C6.05037 12.5 2.84204 15.1083 2.84204 18.3333"
+                    stroke="#1E3231"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </li>
+              <li
+                class="bg-[#CE94611F] hidden lg:flex hover:bg-primaryColor p-2 rounded-full"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5167 17.3417C10.2333 17.4417 9.76666 17.4417 9.48333 17.3417C7.06666 16.5167 1.66666 13.075 1.66666 7.24167C1.66666 4.66667 3.74166 2.58334 6.29999 2.58334C7.81666 2.58334 9.15833 3.31667 9.99999 4.45C10.8417 3.31667 12.1917 2.58334 13.7 2.58334C16.2583 2.58334 18.3333 4.66667 18.3333 7.24167C18.3333 13.075 12.9333 16.5167 10.5167 17.3417Z"
+                    stroke="#1E3231"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </li>
+              <li class="bg-primaryColor p-2 rounded-full relative">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.66667 1.66666H3.11668C4.01668 1.66666 4.72501 2.44166 4.65001 3.33333L3.95834 11.6333C3.84167 12.9917 4.91667 14.1583 6.28333 14.1583H15.1583C16.3583 14.1583 17.4083 13.175 17.5 11.9833L17.95 5.73333C18.05 4.35 17 3.22499 15.6083 3.22499H4.85001"
+                    stroke="white"
+                    stroke-width="1.25"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z"
+                    stroke="white"
+                    stroke-width="1.25"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.875 18.3333C7.45029 18.3333 7.91666 17.867 7.91666 17.2917C7.91666 16.7164 7.45029 16.25 6.875 16.25C6.2997 16.25 5.83333 16.7164 5.83333 17.2917C5.83333 17.867 6.2997 18.3333 6.875 18.3333Z"
+                    stroke="white"
+                    stroke-width="1.25"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 6.66666H17.5"
+                    stroke="white"
+                    stroke-width="1.25"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span
+                  class="absolute w-[14px] h-[14px] rounded-full flex justify-center items-center bg-secondaryColor top-[-4px] text-[8px] text-[#FFFFFF] right-[-4px] font-bold"
+                  >1</span
+                >
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="md:w-[199px] md:h-[53px] w-[118px] h-[31px]">
-          <img
-            loading="lazy"
-            src="./images/Header/mainLogo.svg"
-            class="w-full"
-            alt="Logo"
-          />
-        </div>
-        <div class="">
-          <ul class="flex items-center gap-[1rem]">
-            <li class="bg-[#CE94611F] hover:bg-primaryColor p-2 rounded-full">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+        <!-- المينيو الجانبي -->
+        <div
+          id="menu"
+          class="fixed top-0 right-0 md:w-1/4 w-full h-full bg-secondaryColor text-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-40"
+        >
+          <div class="flex justify-between items-center p-4 border-b">
+            <div></div>
+            <div class="w-[118px] h-[31px]">
+              <img
+                loading="lazy"
+                src="./images/Icons/footer-icon.svg"
+                class="w-full"
+                alt="Logo"
+              />
+            </div>
+            <button id="close-btn" class="text-2xl">&times;</button>
+          </div>
+          <ul class="flex flex-col gap-4 p-6 font-harmattan font-normal">
+            <li>
+              <a
+                class="w-[200px] h-[22px] font-harmattan font-semibold text-[18px] leading-[22px] tracking-normal text-right"
+                href="#"
               >
-                <path
-                  d="M9.58332 17.5C13.9556 17.5 17.5 13.9556 17.5 9.58333C17.5 5.21108 13.9556 1.66666 9.58332 1.66666C5.21107 1.66666 1.66666 5.21108 1.66666 9.58333C1.66666 13.9556 5.21107 17.5 9.58332 17.5Z"
-                  stroke="#1E3231"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M18.3333 18.3333L16.6667 16.6667"
-                  stroke="#1E3231"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+                <div class="flex justify-between px-6 py-3 items-baseline">
+                  الرئــيسية
+                </div>
+              </a>
             </li>
-            <li
-              class="bg-[#CE94611F] hidden lg:flex hover:bg-primaryColor p-2 rounded-full"
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.0003 9.99991C12.3015 9.99991 14.167 8.13443 14.167 5.83325C14.167 3.53206 12.3015 1.66658 10.0003 1.66658C7.69913 1.66658 5.83365 3.53206 5.83365 5.83325C5.83365 8.13443 7.69913 9.99991 10.0003 9.99991Z"
-                  stroke="#1E3231"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17.1587 18.3333C17.1587 15.1083 13.9504 12.5 10.0004 12.5C6.05037 12.5 2.84204 15.1083 2.84204 18.3333"
-                  stroke="#1E3231"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+            <li>
+              <hr />
             </li>
-            <li
-              class="bg-[#CE94611F] hidden lg:flex hover:bg-primaryColor p-2 rounded-full"
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <li>
+              <a
+                class="w-[200px] h-[22px] font-harmattan font-semibold text-[18px] leading-[22px] tracking-normal text-right"
+                href="#"
               >
-                <path
-                  d="M10.5167 17.3417C10.2333 17.4417 9.76666 17.4417 9.48333 17.3417C7.06666 16.5167 1.66666 13.075 1.66666 7.24167C1.66666 4.66667 3.74166 2.58334 6.29999 2.58334C7.81666 2.58334 9.15833 3.31667 9.99999 4.45C10.8417 3.31667 12.1917 2.58334 13.7 2.58334C16.2583 2.58334 18.3333 4.66667 18.3333 7.24167C18.3333 13.075 12.9333 16.5167 10.5167 17.3417Z"
-                  stroke="#1E3231"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+                <div class="flex justify-between px-6 py-3 items-baseline">
+                  المدونة
+                </div>
+              </a>
             </li>
-            <li class="bg-primaryColor p-2 rounded-full relative">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <li>
+              <hr />
+            </li>
+            <li>
+              <a
+                class="w-[200px] h-[22px] font-harmattan font-semibold text-[18px] leading-[22px] tracking-normal text-right"
+                href="#"
               >
-                <path
-                  d="M1.66667 1.66666H3.11668C4.01668 1.66666 4.72501 2.44166 4.65001 3.33333L3.95834 11.6333C3.84167 12.9917 4.91667 14.1583 6.28333 14.1583H15.1583C16.3583 14.1583 17.4083 13.175 17.5 11.9833L17.95 5.73333C18.05 4.35 17 3.22499 15.6083 3.22499H4.85001"
-                  stroke="white"
-                  stroke-width="1.25"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z"
-                  stroke="white"
-                  stroke-width="1.25"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M6.875 18.3333C7.45029 18.3333 7.91666 17.867 7.91666 17.2917C7.91666 16.7164 7.45029 16.25 6.875 16.25C6.2997 16.25 5.83333 16.7164 5.83333 17.2917C5.83333 17.867 6.2997 18.3333 6.875 18.3333Z"
-                  stroke="white"
-                  stroke-width="1.25"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.5 6.66666H17.5"
-                  stroke="white"
-                  stroke-width="1.25"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <span
-                class="absolute w-[14px] h-[14px] rounded-full flex justify-center items-center bg-secondaryColor top-[-4px] text-[8px] text-[#FFFFFF] right-[-4px] font-bold"
-                >1</span
+                <div class="flex justify-between px-6 py-3 items-baseline">
+                  تخفيضات
+                  <img
+                    src="./images/Icons/down-arrow 1.svg"
+                    class="size-4"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr />
+            </li>
+            <li>
+              <a
+                class="w-[200px] h-[22px] font-harmattan font-semibold text-[18px] leading-[22px] tracking-normal text-right"
+                href="#"
               >
+                <div class="flex justify-between px-6 py-3 items-baseline">
+                  العقود
+                  <img
+                    src="./images/Icons/down-arrow 1.svg"
+                    class="size-4"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr />
+            </li>
+            <li>
+              <a
+                class="w-[200px] h-[22px] font-harmattan font-semibold text-[18px] leading-[22px] tracking-normal text-right"
+                href="#"
+              >
+                <div class="flex justify-between px-6 py-3 items-baseline">
+                  الخواتم
+                  <img
+                    src="./images/Icons/down-arrow 1.svg"
+                    class="size-4"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr />
+            </li>
+            <li>
+              <a
+                class="w-[200px] h-[22px] font-harmattan font-semibold text-[18px] leading-[22px] tracking-normal text-right"
+                href="#"
+              >
+                <div class="flex justify-between px-6 py-3 items-baseline">
+                  الأساور
+                  <img
+                    src="./images/Icons/down-arrow 1.svg"
+                    class="size-4"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr />
+            </li>
+            <li>
+              <a
+                class="w-[200px] h-[22px] font-harmattan font-semibold text-[18px] leading-[22px] tracking-normal text-right"
+                href="#"
+              >
+                <div class="flex justify-between px-6 py-3 items-baseline">
+                  السلاسل
+                  <img
+                    src="./images/Icons/down-arrow 1.svg"
+                    class="size-4"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr />
+            </li>
+            <li>
+              <a
+                class="w-[200px] h-[22px] font-harmattan font-semibold text-[18px] leading-[22px] tracking-normal text-right"
+                href="#"
+              >
+                <div class="flex justify-between px-6 py-3 items-baseline">
+                  الحلقان
+                  <img
+                    src="./images/Icons/down-arrow 1.svg"
+                    class="size-4"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr />
             </li>
           </ul>
         </div>
-      </div>
+
+        <!-- أوفرلاي -->
+        <div
+          id="overlay"
+          class="hidden fixed inset-0 bg-black bg-opacity-40 z-30"
+        ></div>
+      </header>
+
+      <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.getElementById("menu");
+        const closeBtn = document.getElementById("close-btn");
+        const overlay = document.getElementById("overlay");
+
+        menuBtn.addEventListener("click", () => {
+          menu.classList.remove("translate-x-full");
+          overlay.classList.remove("hidden");
+        });
+
+        closeBtn.addEventListener("click", () => {
+          menu.classList.add("translate-x-full");
+          overlay.classList.add("hidden");
+        });
+
+        overlay.addEventListener("click", () => {
+          menu.classList.add("translate-x-full");
+          overlay.classList.add("hidden");
+        });
+      </script>
     </header>
 
     <section class="main-banner bg-secondaryColor relative overflow-hidden">

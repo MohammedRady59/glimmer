@@ -1,5 +1,7 @@
 const latested = document.querySelector(".lastedProudctdata");
+
 let latestProductsContainer = ``;
+
 const allDatalatestProducts = [
   {
     img1: "./images/Latest products/product1.jpg",
@@ -95,6 +97,16 @@ style1.innerHTML = `@keyframes my {
 }`;
 document.head.append(style1);
 
+btnMenu.addEventListener(`click`, function (e) {
+  e.preventDefault();
+  showMenu.classList.remove("left-[100%]");
+  document.body.style.overflow = "hidden";
+});
+closeMenu.addEventListener(`click`, function (e) {
+  e.preventDefault();
+  showMenu.classList.add("left-[100%]");
+  document.body.style.overflow = "";
+});
 // ===== السلايدر الكبير =====
 const bigSlider = new Swiper(".bigSlider", {
   loop: true,
